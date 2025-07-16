@@ -1,0 +1,6 @@
+export { Header } from "./header"
+export { ProductsWrapper } from "./products-wrapper"
+export { Product } from "./product"
+export { DeleteProductModal } from "./delete-product-modal"
+export { ProductForm } from "./product-form"
+export { ErrorMessage } from "./error-message"
