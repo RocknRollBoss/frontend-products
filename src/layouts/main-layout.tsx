@@ -1,4 +1,4 @@
-import { Header } from "@/components"
+import { Footer, Header } from "@/components"
 import { Container } from "@/components/container"
 import React from "react"
 type Props = {
@@ -12,6 +12,7 @@ export const MainLayout: React.FC<Props> = ({ children }) => {
       <Container>
         <main>{children}</main>
       </Container>
+      <Footer />
     </div>
   )
 }
