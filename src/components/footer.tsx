@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
             Home
           </Link>
           <Link
-            to={RoutesEnum.PRODUCTS}
+            to={RoutesEnum.HOME}
             className="hover:text-foreground transition-colors"
           >
             Products
