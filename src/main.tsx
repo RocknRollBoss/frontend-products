@@ -10,6 +10,7 @@ import {
   ProductDetails,
   ProductEdit,
   Register,
+  ThankYou,
 } from "./pages"
 import "./index.css"
 import { ErrorMessage } from "./components"
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: `${RoutesEnum.EDIT}/:id`,
     element: <ProductEdit />,
+  },
+  {
+    path: `${RoutesEnum.THANKYOU}`,
+    element: <ThankYou />,
     errorElement: <ErrorMessage />,
   },
 ])
@@ -54,6 +59,7 @@ if (container) {
     <Provider store={store}>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <RouterProvider router={router} />
+  
       </ThemeProvider>
     </Provider>,
   )

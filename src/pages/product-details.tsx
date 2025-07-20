@@ -2,7 +2,7 @@ import {
   useGetProductQuery,
   useRemoveProductMutation,
 } from "@/app/services/product-api"
-import { DeleteProductModal } from "@/components"
+import { CartDrawer, DeleteProductModal } from "@/components"
 import { Loader } from "@/components/loader"
 import { Button, Title } from "@/components/ui"
 import { userSelector } from "@/features/slices/authSlice"
@@ -62,24 +62,25 @@ export const ProductDetails: React.FC = () => {
                 fits seamlessly into your lifestyle.
               </p>
             </div>
-            {user?.id === product.userId && (
-              <div>
-                <span className="text-2xl font-semibold text-green-600 mb-6 block">
-                  {product.price} ₴
-                </span>
-                <div className="flex gap-4">
-                  <Button className="px-5 py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-300 transition-colors">
-                    Buy
-                  </Button>
-                  <Link to={`${RoutesEnum.EDIT}/${id}`}>
-                    <Button className="px-5 py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-300 transition-colors">
-                      Edit
-                    </Button>
-                  </Link>
-                  <DeleteProductModal deleteProduct={onRemoveProduct} />
-                </div>
+
+            <div>
+              <span className="text-2xl font-semibold text-green-600 mb-6 block">
+                {product.price} $
+              </span>
+              <div className="flex gap-4">
+                <CartDrawer id={id} />
+                {user?.id === product.userId && (
+                  <div className="flex gap-4">
+                    <Link to={`${RoutesEnum.EDIT}/${id}`}>
+                      <Button className="px-5 py-2 bg-emerald-500 text-white rounded-md hover:bg-emerald-300 transition-colors">
+                        Edit
+                      </Button>
+                    </Link>
+                    <DeleteProductModal deleteProduct={onRemoveProduct} />
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>

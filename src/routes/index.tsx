@@ -5,4 +5,5 @@ export enum RoutesEnum {
   PRODUCTS = "/products",
   EDIT = "/products/edit",
   CREATE = "/products/create",
+  THANKYOU = "/thank-you",
 }

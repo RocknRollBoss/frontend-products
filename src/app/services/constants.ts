@@ -4,5 +4,5 @@ export enum ApiRoutes {
   ME = "/auth/me",
   PRODUCTS = "products",
   CREATE = "/products/create",
-
+  CART = "/cart",
 }

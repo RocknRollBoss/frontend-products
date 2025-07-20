@@ -7,6 +7,7 @@ import { Title } from "./ui/title"
 import { useDispatch, useSelector } from "react-redux"
 import { logOut, userSelector } from "@/features/slices/authSlice"
 import { ModeToggle } from "./mode-toggle"
+import { CartDrawer } from "./cart-drawer"
 export const Header: React.FC = () => {
   const dispatch = useDispatch()
   const user = useSelector(userSelector)
@@ -32,6 +33,7 @@ export const Header: React.FC = () => {
               <Button variant="outline" onClick={onLogout}>
                 Logout
               </Button>
+              <CartDrawer />
             </>
           ) : (
             <>
