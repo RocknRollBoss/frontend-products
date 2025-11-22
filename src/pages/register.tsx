@@ -131,6 +131,7 @@ export const Register: React.FC = () => {
             </Button>
           </form>
         </Form>
+        
       </div>
     </MainLayout>
   )

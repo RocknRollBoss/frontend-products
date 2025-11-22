@@ -28,7 +28,6 @@ export const CartDrawer: React.FC<Props> = ({ id }) => {
   const navigate = useNavigate()
   const productId = id || ""
   const onPlaceOrder = () => {
-
     navigate(RoutesEnum.THANKYOU)
     onClearCart()
   }
