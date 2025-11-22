@@ -175,4 +175,3 @@ npm run build
 
 ---
 
-# ✅ README is ready
