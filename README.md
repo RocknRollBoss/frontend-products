@@ -16,14 +16,14 @@
 
 The app includes:
 
-- Product catalog  
-- Product details  
-- Cart functionality  
-- Authentication (JWT)  
-- Search + sorting  
-- **Full product CRUD: create, edit, delete**  
-- Light/Dark theme  
-- Responsive design  
+- Product catalog
+- Product details
+- Cart functionality
+- Authentication (JWT)
+- Search + sorting
+- **Full product CRUD: create, edit, delete**
+- Light/Dark theme
+- Responsive design
 
 Deployed on **Vercel**.
 
@@ -35,60 +35,66 @@ https://react-products-beta.vercel.app/
 ## ✨ Features
 
 ### 🛍️ Product Features
-- View product catalog  
-- Product detail page  
-- Search products  
-- Sorting options  
-- **Create new products (authorized users only / admin)**  
-- **Edit existing products**  
-- **Delete products**  
-- Add to cart  
-- Modify quantity  
-- Remove from cart  
-- Auto total price calculation  
+
+- View product catalog
+- Product detail page
+- Search products
+- Sorting options
+- **Create new products (authorized users only / admin)**
+- **Edit existing products**
+- **Delete products**
+- Add to cart
+- Modify quantity
+- Remove from cart
+- Auto total price calculation
 
 ### 🧺 Cart
-- Add items  
-- Remove items  
-- Change quantity  
-- Clear cart  
-- Realtime total price  
+
+- Add items
+- Remove items
+- Change quantity
+- Clear cart
+- Realtime total price
 
 ### 🔐 Authentication
-- JWT register  
-- JWT login  
-- Protected routes  
-- Auto-persist authentication with RTK Query  
+
+- JWT register
+- JWT login
+- Protected routes
+- Auto-persist authentication with RTK Query
 
 ### 🎨 UI / UX
-- TailwindCSS styling  
-- Shadcn/UI components  
-- Fully responsive layout  
-- Light / Dark theme switch  
-- Clean, modern interface  
+
+- TailwindCSS styling
+- Shadcn/UI components
+- Fully responsive layout
+- Light / Dark theme switch
+- Clean, modern interface
 
 ---
 
 ## 🧩 Tech Stack
 
 ### Frontend
-| Technology | Purpose |
-|-----------|---------|
-| **React (Vite)** | Core UI Framework |
-| **TypeScript** | Static typing |
-| **RTK Query** | API requests & caching |
-| **React Router** | Routing |
-| **TailwindCSS** | Styling |
-| **Shadcn/UI** | Components |
-| **Context** | Theme & global state |
+
+| Technology       | Purpose                |
+| ---------------- | ---------------------- |
+| **React (Vite)** | Core UI Framework      |
+| **TypeScript**   | Static typing          |
+| **RTK Query**    | API requests & caching |
+| **React Router** | Routing                |
+| **TailwindCSS**  | Styling                |
+| **Shadcn/UI**    | Components             |
+| **Context**      | Theme & global state   |
 
 ### Backend (External)
-| Technology | Purpose |
-|-----------|---------|
-| Express | REST API |
-| Prisma | ORM |
-| SQLite | Database |
-| JWT | Authentication |
+
+| Technology | Purpose        |
+| ---------- | -------------- |
+| Express    | REST API       |
+| Prisma     | ORM            |
+| SQLite     | Database       |
+| JWT        | Authentication |
 
 ---
 
@@ -107,36 +113,40 @@ routes/
 ```
 
 ### Folder Description
-- **app/** – App root, providers  
-- **components/** – Reusable UI components  
-- **context/** – Theme/auth contexts  
-- **features/** – Cart, products, auth logic  
-- **hooks/** – Custom hooks  
-- **layouts/** – Shared page layouts  
-- **lib/** – API, helpers, utils  
-- **pages/** – Route pages  
-- **routes/** – Routing configuration  
+
+- **app/** – App root, providers
+- **components/** – Reusable UI components
+- **context/** – Theme/auth contexts
+- **features/** – Cart, products, auth logic
+- **hooks/** – Custom hooks
+- **layouts/** – Shared page layouts
+- **lib/** – API, helpers, utils
+- **pages/** – Route pages
+- **routes/** – Routing configuration
 
 ---
 
-## 🖼️ Screenshots (add later)
+## 📸 Screenshots
 
-Place images here:
+### 🔐 Login Page
 
-```
-public/screenshots/
-```
+![Login](./screenshot/login.png)
 
-Example:
+### 🛍️ Products List
 
-```
-![Home](./public/screenshots/home.png)
-![Product](./public/screenshots/product.png)
-![Cart](./public/screenshots/cart.png)
-![Admin](./public/screenshots/admin.png)
-```
+![Products List](./screenshot/products-list.png)
 
----
+### 📄 Product Details
+
+![Product Details](./screenshot/product-details.png)
+
+### 🛒 Cart
+
+![Cart](./screenshot/cart.png)
+
+### ➕ Create Product
+
+![Create Product](./screenshot/create-product.png)
 
 ## ▶️ Running the Project
 
@@ -162,16 +172,15 @@ npm run build
 
 ## 🌍 Deployment
 
-- **Frontend:** Vercel  
-- **Backend:** Render  
+- **Frontend:** Vercel
+- **Backend:** Render
 
 ---
 
 ## 📌 Notes
 
-- Ensure your `.env` contains your backend API URL.  
-- Cart and theme persist via `localStorage`.  
-- RTK Query provides caching and request deduplication.  
+- Ensure your `.env` contains your backend API URL.
+- Cart and theme persist via `localStorage`.
+- RTK Query provides caching and request deduplication.
 
 ---
-
